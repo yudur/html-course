@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+.pai .um ~ .dois {
+    color: red;
+}
+
+[meu-atributo] {
+    color: red;
+}
+
+[checked] {
+    width: 40px;
+}
