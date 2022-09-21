@@ -1,0 +1,30 @@
+html {
+    font-size: 65.5%;
+}
+
+.pai {
+    font-size: 20px;
+}
+
+p.px {
+    font-size: 20px;
+}
+
+p.em {
+    font-size: 1em;  /* 50 x 1 = 50     50 x 0.5 = 25   --- Baseado no elemento pai */
+}
+
+p.rem {
+    font-size: 1rem;  /* Baseado no elemento rot (html) */
+}
+
+p.vw {
+    font-size: 20px;
+    width: 45vw;
+    height: 45vh;
+    background: red;
+}
+
+p.vmax {
+    font-size: 2vmax;
+}
