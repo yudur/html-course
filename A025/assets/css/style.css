@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+}
+
+.grid {
+    max-width: 1200px;
+    padding: 15px;
+    margin: 0 auto;
+    padding-top: 73px;
+}
+
+
+.grid::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+    height: 300px;
+    float: left;
+    padding: 15px;
+}
+
+.grid .col-content {
+    width: 100%;
+    height: 100%;
+    background: red; /* ABCDEF123456789 */
+    color: #fff;
+} 
+
+.menu {
+    width: 100%;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.842);
+}
+
+
+
+
+.menu ul {
+    list-style: none;
+    display: block;
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+    transition: all 300ms ease-in-out;
+}
+
+.menu ul li {
+    float: left;
+}
+
+.menu ul li a {
+    display: block;
+    color: #fff;
+    padding: 20px;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background: #333;
+}
+
+.full-page{
+    max-width: 100%;
+    padding-top: 73px;
+    height: 100vh;
+    background: yellow;
+}
+
+.full-page-content {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+@media (max-width: 320px) {
+    .grid .col {
+        width: 100%;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 768px) {
+    .grid .col {
+        width: 50%;
+    }
+}
+
+@media (min-width: 769px) {
+    .grid .col {
+        width: 33.33%;
+    }
+}
