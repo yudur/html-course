@@ -36,7 +36,8 @@ body {
     width: 100%;
     height: 100%;
     background: red; /* ABCDEF123456789 */
-    color: #fff;
+    border-radius: 10px;
+    box-shadow: -5px 5px 15px 0 blue;
 } 
 
 .menu {
